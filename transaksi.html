@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaksi - Z2N Computer Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Z2N Computer Store">
+        <img src="assets/brand_logo.png" alt="Logo Z2N Computer Store" />
+        <div>
+          <h1>Z2N Computer Store</h1>
+          <div class="small">Jual beli komputer & aksesoris — cepat, aman, bergaransi</div>
+        </div>
+      </a>
+      
+      <nav>
+        <a href="index.html" >Produk</a>
+        <a href="transaksi.html" class="active">Transaksi</a>
+        <a href="invoice.html" >Invoice</a>
+        <a href="kontak.html" >Kontak</a>
+        <a href="about.html" >Tentang</a>
+      </nav>
+    
+    </div>
+    <div class="marquee">
+      <span>🔥 Promo Merdeka: Gratis ongkir Jawa-Bali untuk transaksi di atas Rp5.000.000 • Cicilan 0% hingga 12 bulan • Servis prioritas untuk semua pelanggan terdaftar 🔥</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Petunjuk</h3>
+      <p class="small">Form ini berisi data transaksi. Setelah diisi, klik <b>Buat Pesanan</b> untuk melihat struk/invoice.</p>
+      <div class="badge">Keamanan</div>
+      <p class="small">Data hanya disimpan di browser Anda untuk kebutuhan demo.</p>
+    </aside>
+    <section class="content">
+      <h2>Form Transaksi</h2>
+      <form id="orderForm" class="form" onsubmit="return submitOrder(event)">
+        <div class="row">
+          <div>
+            <label>Nama Lengkap</label>
+            <input required name="nama" placeholder="Nama sesuai KTP" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input required type="email" name="email" placeholder="nama@email.com" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>No. HP/WhatsApp</label>
+            <input required name="phone" placeholder="08xxxxxxxxxx" />
+          </div>
+          <div>
+            <label>Alamat</label>
+            <input required name="alamat" placeholder="Jalan, Kota, Kode Pos" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Produk</label>
+            <select name="produk" id="produkSelect">
+              <option value="Laptop Pro X15" data-price="18999000">Laptop Pro X15</option>
+              <option value="Desktop Gamer R9" data-price="27499000">Desktop Gamer R9</option>
+              <option value="Mini PC Nano" data-price="4999000">Mini PC Nano</option>
+            </select>
+          </div>
+          <div>
+            <label>Harga Satuan (Rp)</label>
+            <input name="harga" id="hargaInput" value="18999000" readonly />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Jumlah</label>
+            <input type="number" min="1" value="1" name="qty" id="qtyInput" />
+          </div>
+          <div>
+            <label>Metode Pembayaran</label>
+            <select name="payment">
+              <option>Transfer Bank</option>
+              <option>Kartu Kredit</option>
+              <option>COD</option>
+              <option>E-Wallet</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Pengiriman</label>
+            <select name="shipping" id="shippingSelect">
+              <option value="Regular" data-cost="30000">Regular (Rp30.000)</option>
+              <option value="Express" data-cost="75000">Express (Rp75.000)</option>
+              <option value="Ambil di Toko" data-cost="0">Ambil di Toko (Gratis)</option>
+            </select>
+          </div>
+          <div>
+            <label>Catatan</label>
+            <input name="catatan" placeholder="Contoh: Warna, permintaan khusus, dsb." />
+          </div>
+        </div>
+        <div>
+          <button class="btn" type="submit">Buat Pesanan</button>
+          <a class="btn btn-secondary" href="index.html">Kembali</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <div class="badge">Z2N.ID</div>
+        <p class="small">Website latihan UAS Komputer Aplikasi TI. Konten & harga hanya contoh untuk keperluan akademik.</p>
+      </div>
+      <div style="text-align:right">
+        <a class="img-link" href="https://www.asus.com/id/" target="_blank" rel="noopener">
+          <img src="assets/laptop_pro.png" alt="Link gambar ke ASUS Indonesia" width="220" />
+        </a>
+        <div class="small">Contoh <b>link gambar</b> yang mengarah ke situs brand.</div>
+      </div>
+    </div>
+    <div class="small" style="margin-top:10px">© 2025 Z2N Computer Store. All rights reserved.</div>
+  </footer>
+</body>
+</html>

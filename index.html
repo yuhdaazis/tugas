@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk - Z2N Computer Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Z2N Computer Store">
+        <img src="assets/brand_logo.png" alt="Logo Z2N Computer Store" />
+        <div>
+          <h1>Z2N Computer Store</h1>
+          <div class="small">Jual beli komputer & aksesoris — cepat, aman, bergaransi</div>
+        </div>
+      </a>
+      
+      <nav>
+        <a href="index.html" class="active">Produk</a>
+        <a href="transaksi.html" >Transaksi</a>
+        <a href="invoice.html" >Invoice</a>
+        <a href="kontak.html" >Kontak</a>
+        <a href="about.html" >Tentang</a>
+      </nav>
+    
+    </div>
+    <div class="marquee">
+      <span>🔥 Promo Merdeka: Gratis ongkir Jawa-Bali untuk transaksi di atas Rp5.000.000 • Cicilan 0% hingga 12 bulan • Servis prioritas untuk semua pelanggan terdaftar 🔥</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li>✦ Laptop</li>
+        <li>✦ Desktop</li>
+        <li>✦ Mini PC</li>
+        <li>✦ Aksesoris</li>
+      </ul>
+      <hr style="border-color:var(--border)">
+      <h3>Bantuan</h3>
+      <p class="small">Klik tombol <b>Beli</b> pada produk, Anda akan diarahkan ke halaman transaksi.</p>
+    </aside>
+    <section class="content">
+      <h2>Produk Unggulan</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/laptop_pro.png" alt="Laptop Pro X15" />
+          <div class="body">
+            <h3>Laptop Pro X15</h3>
+            <div class="small">Intel® Core™ i7, RAM 16GB, SSD 1TB, 15.6&quot; IPS 144Hz</div>
+            <div class="price">Rp 18.999.000</div>
+            <button class="btn" onclick="beli('Laptop Pro X15', 18999000)">Beli</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/desktop_gamer.png" alt="Desktop Gamer R9" />
+          <div class="body">
+            <h3>Desktop Gamer R9</h3>
+            <div class="small">Ryzen™ 9, RTX 4070, RAM 32GB, SSD 2TB</div>
+            <div class="price">Rp 27.499.000</div>
+            <button class="btn" onclick="beli('Desktop Gamer R9', 27499000)">Beli</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/mini_pc.png" alt="Mini PC Nano" />
+          <div class="body">
+            <h3>Mini PC Nano</h3>
+            <div class="small">Intel® N100, RAM 8GB, SSD 512GB, Wi‑Fi 6</div>
+            <div class="price">Rp 4.999.000</div>
+            <button class="btn" onclick="beli('Mini PC Nano', 4999000)">Beli</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <div>
+        <div class="badge">Z2N.ID</div>
+        <p class="small">Website latihan UAS Komputer Aplikasi TI. Konten & harga hanya contoh untuk keperluan akademik.</p>
+      </div>
+      <div style="text-align:right">
+        <a class="img-link" href="https://www.asus.com/id/" target="_blank" rel="noopener">
+          <img src="assets/laptop_pro.png" alt="Link gambar ke ASUS Indonesia" width="220" />
+        </a>
+        <div class="small">Contoh <b>link gambar</b> yang mengarah ke situs brand.</div>
+      </div>
+    </div>
+    <div class="small" style="margin-top:10px">© 2025 Z2N Computer Store. All rights reserved.</div>
+  </footer>
+</body>
+</html>
